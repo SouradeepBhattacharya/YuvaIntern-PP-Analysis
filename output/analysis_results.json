@@ -1,0 +1,182 @@
+{
+  "disclaimer": "All operational observations are hypothetical educational data; these are external Python calculations, not executed SAP transactions.",
+  "history": [
+    380,
+    400,
+    390,
+    420,
+    410,
+    430,
+    440,
+    450
+  ],
+  "demand": [
+    420,
+    460,
+    500,
+    480
+  ],
+  "mrp": [
+    {
+      "week": 1,
+      "opening": 80,
+      "demand": 420,
+      "receipt": 400,
+      "ending": 60,
+      "assembly_hours": 38.4,
+      "machine_hours": 48.0
+    },
+    {
+      "week": 2,
+      "opening": 60,
+      "demand": 460,
+      "receipt": 460,
+      "ending": 60,
+      "assembly_hours": 44.160000000000004,
+      "machine_hours": 55.199999999999996
+    },
+    {
+      "week": 3,
+      "opening": 60,
+      "demand": 500,
+      "receipt": 500,
+      "ending": 60,
+      "assembly_hours": 48.0,
+      "machine_hours": 60.0
+    },
+    {
+      "week": 4,
+      "opening": 60,
+      "demand": 480,
+      "receipt": 480,
+      "ending": 60,
+      "assembly_hours": 46.08,
+      "machine_hours": 57.599999999999994
+    }
+  ],
+  "forecast": [
+    {
+      "period": 4,
+      "actual": 420,
+      "moving_average_3": 390.0,
+      "exponential_smoothing": 387.2
+    },
+    {
+      "period": 5,
+      "actual": 410,
+      "moving_average_3": 403.3333333333333,
+      "exponential_smoothing": 397.03999999999996
+    },
+    {
+      "period": 6,
+      "actual": 430,
+      "moving_average_3": 406.6666666666667,
+      "exponential_smoothing": 400.92799999999994
+    },
+    {
+      "period": 7,
+      "actual": 440,
+      "moving_average_3": 420.0,
+      "exponential_smoothing": 409.64959999999996
+    },
+    {
+      "period": 8,
+      "actual": 450,
+      "moving_average_3": 426.6666666666667,
+      "exponential_smoothing": 418.75471999999996
+    }
+  ],
+  "forecast_metrics": [
+    {
+      "model": "moving_average_3",
+      "mae": 20.666666666666664,
+      "bias": 20.666666666666664,
+      "next_forecast": 440.0
+    },
+    {
+      "model": "exponential_smoothing",
+      "mae": 27.285536000000036,
+      "bias": 27.285536000000036,
+      "next_forecast": 428.12830399999996
+    }
+  ],
+  "capacity": [
+    {
+      "weekly_assembly_hours": 40,
+      "produced": 1648,
+      "ending_inventory": 0,
+      "ending_backlog": 132,
+      "backlog_by_week": [
+        0,
+        0,
+        68,
+        132
+      ],
+      "inventory_by_week": [
+        60,
+        16,
+        0,
+        0
+      ]
+    },
+    {
+      "weekly_assembly_hours": 44,
+      "produced": 1774,
+      "ending_inventory": 0,
+      "ending_backlog": 6,
+      "backlog_by_week": [
+        0,
+        0,
+        0,
+        6
+      ],
+      "inventory_by_week": [
+        60,
+        58,
+        16,
+        0
+      ]
+    },
+    {
+      "weekly_assembly_hours": 48,
+      "produced": 1840,
+      "ending_inventory": 60,
+      "ending_backlog": 0,
+      "backlog_by_week": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "inventory_by_week": [
+        60,
+        60,
+        60,
+        60
+      ]
+    }
+  ],
+  "monte_carlo": [
+    {
+      "hours": 40,
+      "mean_end_backlog": 171.3295,
+      "p90_end_backlog": 279,
+      "probability_zero_end_backlog": 0.016,
+      "mean_cost_units": 6990.561
+    },
+    {
+      "hours": 44,
+      "mean_end_backlog": 43.489,
+      "p90_end_backlog": 120,
+      "probability_zero_end_backlog": 0.3785,
+      "mean_cost_units": 3157.42
+    },
+    {
+      "hours": 48,
+      "mean_end_backlog": 3.0225,
+      "p90_end_backlog": 0,
+      "probability_zero_end_backlog": 0.905,
+      "mean_cost_units": 3092.243
+    }
+  ]
+}
